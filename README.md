@@ -207,6 +207,12 @@ curl "http://localhost:8080/api/users/search?name=Alice&surname=Liddell"
 ```
 
 #### CSV Import
+users.csv
+```csv
+name,surname,email,address
+Bob,Builder,bob@example.com,456 Build St
+Charlie,Chocolate,charlie@example.com,789 Sweet St
+```
 ```bash
 curl -X POST http://localhost:8080/api/users/import \
      -H "Content-Type: multipart/form-data" \
