@@ -126,6 +126,7 @@ Once the application is running (locally on port 8080), you can test the endpoin
 
 #### Create a New User
 POST http://localhost:8080/api/users
+
 Body: (raw JSON)
 ```json
 {
@@ -147,6 +148,9 @@ GET http://localhost:8080/api/users
 ```
 
 #### Update a User
+PUT http://localhost:8080/api/users/1
+
+Body: (raw JSON)
 ```json
 {
   "name": "Alice",
@@ -170,7 +174,7 @@ GET http://localhost:8080/api/users/search?name=Alice&surname=Liddell
 ```
 POST http://localhost:8080/api/users/import
 ```
-Body: Form-data with a key file and select your CSV file.
+Body: select your CSV file.
 Example CSV content:
 ```csv
 name,surname,email,address
