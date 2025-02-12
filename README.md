@@ -125,6 +125,8 @@ Once the application is running (locally on port 8080), you can test the endpoin
 ### Testing with Postman
 
 #### Create a New User
+POST http://localhost:8080/api/users
+Body: (raw JSON)
 ```json
 {
   "name": "Alice",
@@ -168,7 +170,13 @@ GET http://localhost:8080/api/users/search?name=Alice&surname=Liddell
 ```
 POST http://localhost:8080/api/users/import
 ```
-*Form-data with file upload (CSV file)*
+Body: Form-data with a key file and select your CSV file.
+Example CSV content:
+```csv
+name,surname,email,address
+Bob,Builder,bob@example.com,456 Build St
+Charlie,Chocolate,charlie@example.com,789 Sweet St
+```
 
 ### Testing with cURL
 
