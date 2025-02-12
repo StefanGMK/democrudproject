@@ -124,7 +124,7 @@ Once the application is running (locally on port 8080), you can test the endpoin
 
 ### Testing with Postman
 
-#### Create a User
+#### Create a New User
 ```json
 {
   "name": "Alice",
